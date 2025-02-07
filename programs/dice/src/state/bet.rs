@@ -1,7 +1,7 @@
 use anchor_lang::prelude::*;
 
 #[account]
-#[derive(InitSpace)] // You need to add the 8 bytes for the anchor account discriminator upon account init
+#[derive(InitSpace)]
 pub struct Bet {
     pub player: Pubkey,
     pub seed: u128,
